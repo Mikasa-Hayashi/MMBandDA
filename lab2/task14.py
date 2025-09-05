@@ -28,3 +28,24 @@ def plot_sign_function():
     plt.grid()
     plt.show()
 
+
+def split_number(x):
+    integer_part = int(x)
+    fractional_part = x - integer_part
+    return integer_part, fractional_part
+
+
+def plot_integer_and_fractional_parts():
+    x = np.linspace(-3, 3, 500)
+    integer_part, fractional_part = zip(*[split_number(i) for i in x])
+    plt.plot(x, integer_part, label='Integer Part')
+    plt.plot(x, fractional_part, label='Fractional Part')
+    plt.title('Integer and Fractional Parts')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.grid()
+    plt.show()
+    
+
+plot_integer_and_fractional_parts()
