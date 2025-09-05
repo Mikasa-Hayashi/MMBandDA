@@ -23,3 +23,12 @@ def calc_exp_2():
     second_part = scnd_part_delimeter / scnd_part_denominator
     expression = first_part - second_part
     return round(expression, 3)
+
+
+def calc_avg_brake_path(cars):
+    pass
+
+
+if __name__ == '__main__':
+    print(calc_exp_1())
+    print(calc_exp_2())
