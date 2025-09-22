@@ -11,7 +11,7 @@ Z = X**3 - 3600*X - 50*Y**2
 
 # Создаем фигуру и 3D-оси
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.add_subplot(111, projection='3d') # означает 1 ряд, 1 колонка, 1-й график
 
 # Строим поверхность
 surf = ax.plot_surface(X, Y, Z, cmap='viridis')
