@@ -14,7 +14,7 @@ x = sp.Symbol('x', real=True, positive=True)    # real=True означает, ч
 print("Fanction a: ")
 # print("=" * 60)
 
-f_a = 3*sp.exp(-2*x) + (x**(1/3)) / sp.log(sp.log(x))
+f_a = 3*sp.exp(-2*x) + (x**(1/3)) / sp.ln(sp.ln(x))
 print("f(x) =", f_a)
 
 # Производные
@@ -24,7 +24,7 @@ derivative(f_a, x)
 print("\n" * 2)
 print("Fanction b: ")
 
-f_b = (7*x**4 + sp.cos(1-x)) / sp.asin(x)
+f_b = (7*x**4 + sp.cos(1-x)) / sp.asin(sp.asin(x))
 
 print("f(x) =", f_b)
 
